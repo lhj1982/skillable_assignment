@@ -8,6 +8,18 @@
 </head>
 <body>
 
+    <ul>
+      <% if signed_in? %>
+        <li><%= link_to "Companies", companies_path %></li>
+      <% end %>
+      <% if signed_in? %>
+        <li><%= link_to "Sign out", signout_path %></li>
+      <% else %>
+        <li><%= link_to "Sign in", signin_path %></li>
+      <% end %>
+    </ul>
+
+<p>
 <%= yield %>
 
 </body>

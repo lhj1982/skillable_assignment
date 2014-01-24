@@ -1,9 +1,15 @@
 class CompaniesController < ApplicationController
+  before_filter :authenticate
   before_action :set_company, only: [:show, :edit, :update, :destroy]
 
   # GET /companies
   # GET /companies.json
   def index
+    if current_user.nil?
+      redirect_to root_path
+    else 
+      puts '233r'
+    end
     @companies = Company.all
   end
 
