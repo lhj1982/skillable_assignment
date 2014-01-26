@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140123153618) do
+ActiveRecord::Schema.define(version: 20140124151219) do
 
   create_table "companies", force: true do |t|
     t.string   "logo"
@@ -22,6 +22,33 @@ ActiveRecord::Schema.define(version: 20140123153618) do
     t.integer  "votes"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "company_reviews", force: true do |t|
+    t.string  "company_reviews"
+    t.integer "company_id"
+    t.integer "user_id"
+    t.integer "clarity_of_role"
+    t.integer "trust_responsibilities"
+    t.integer "autonomy_flexibility"
+    t.integer "guidance_feedback"
+    t.integer "creativity_innovation"
+    t.integer "equality_fairness"
+    t.integer "consistency_transparency"
+    t.integer "career_growth"
+    t.integer "compensation_benefits"
+    t.integer "recongnition_reward"
+    t.integer "learning_improvement"
+    t.integer "cooperation_efficiency"
+    t.integer "workplace"
+    t.integer "atmosphere_relationship"
+    t.integer "trust_leadship"
+    t.integer "wordload_balance"
+    t.integer "relationship_with_supervisor"
+    t.integer "stimulating_job"
+    t.integer "voice_own_option"
+    t.integer "sense_belonging"
+    t.integer "culture_diversity"
   end
 
   create_table "users", force: true do |t|

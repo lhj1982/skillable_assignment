@@ -1,0 +1,90 @@
+<h1>Rate Company <strong><%= @company.name%></strong></h1>
+<%= form_for(:companyReview, :url => rate_company_path) do |f| %>
+  <div class="field">
+    <%= f.label "Clarity of Role, Goals & Objectives" %><br />
+    <%= f.text_field :clarity_of_role %>
+  </div>
+  <div class="field">
+    <%= f.label "Trust and Responsibility Given" %><br />
+    <%= f.text_field :trust_responsibilities %>
+  </div>
+  <div class="field">
+    <%= f.label "Autonomy & Flexibility" %><br />
+    <%= f.text_field :autonomy_flexibility %>
+  </div>
+  <div class="field">
+    <%= f.label "Guidance & Feedback received" %><br />
+    <%= f.text_field :guidance_feedback %>
+  </div>
+  <div class="field">
+    <%= f.label "Creativity & Innovation opportunities" %><br />
+    <%= f.text_field :creativity_innovation %>
+  </div>
+  <div class="field">
+    <%= f.label "Equality & Fairness" %><br />
+    <%= f.text_field :equality_fairness %>
+  </div>
+  <div class="field">
+    <%= f.label "Consistency & Transparency" %><br />
+    <%= f.text_field :consistency_transparency %>
+  </div>
+  <div class="field">
+    <%= f.label "Career Growth opportunities" %><br />
+    <%= f.text_field :career_growth %>
+  </div>
+  <div class="field">
+    <%= f.label "Compensation & Benefits" %><br />
+    <%= f.text_field :compensation_benefits %>
+  </div>
+  <div class="field">
+    <%= f.label "Recongnition & Reward" %><br />
+    <%= f.text_field :recongnition_reward %>
+  </div>
+  <div class="field">
+    <%= f.label "Learning & Improvement opportunities" %><br />
+    <%= f.text_field :learning_improvement %>
+  </div>
+  <div class="field">
+    <%= f.label "Cooperatiion, Coordination, Collaboration & Efficiency" %><br />
+    <%= f.text_field :cooperation_efficiency %>
+  </div>
+  <div class="field">
+    <%= f.label "Workplace, Amenities & Gadgets" %><br />
+    <%= f.text_field :workplace %>
+  </div>
+  <div class="field">
+    <%= f.label "Atmosphere, Mood & Relationship with the Team" %><br />
+    <%= f.text_field :atmosphere_relationship %>
+  </div>
+  <div class="field">
+    <%= f.label "Trust on Management & Leadership" %><br />
+    <%= f.text_field :trust_leadship %>
+  </div>
+  <div class="field">
+    <%= f.label "Workload balance" %><br />
+    <%= f.text_field :workload_balance %>
+  </div>
+  <div class="field">
+    <%= f.label "Relationship with Supervisor/Managment" %><br />
+    <%= f.text_field :relationship_with_supervisor %>
+  </div>
+  <div class="field">
+    <%= f.label "Stimulating Job" %><br />
+    <%= f.text_field :stimulating_job %>
+  </div>
+  <div class="field">
+    <%= f.label "Opportunity to Voice own Opinion" %><br />
+    <%= f.text_field :voice_own_option %>
+  </div>
+  <div class="field">
+    <%= f.label "Sense of Belonging & Pride for the Company" %><br />
+    <%= f.text_field :sense_belonging %>
+  </div>
+  <div class="field">
+    <%= f.label "Sex, Age & Culture Diversity" %><br />
+    <%= f.text_field :culture_diversity %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Save" %>
+  </div>
+<% end %>

@@ -1,5 +1,10 @@
 SkillableAssignment::Application.routes.draw do
-  resources :companies
+  resources :companies do
+    member do
+      get 'rate'
+      post 'rate'
+    end
+  end
   resources :users
   resources :sessions,      :only => [:new, :create, :destroy]
 

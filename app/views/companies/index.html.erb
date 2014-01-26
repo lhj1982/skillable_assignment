@@ -26,7 +26,10 @@
         <td><%= company.votes %></td>
         <td><%= link_to 'Show', company %></td>
         <td><%= link_to 'Edit', edit_company_path(company) %></td>
-        <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
+        <td><%= link_to 'Rate', rate_company_path(company)%>
+        </td>
       </tr>
     <% end %>
   </tbody>
